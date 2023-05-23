@@ -1,0 +1,158 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  background: #43affc;
+}
+
+#app {
+  display: grid;
+  grid-auto-rows: minmax(150px, auto);
+  grid-template-rows: minmax(20px, auto);
+
+  /* grid-template-columns:  */
+  height: 120vh;
+  width: 400px;
+  background: #fff;
+  color: #14097a;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  grid-gap: 1em;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  margin: auto;
+  position: relative;
+  grid-template-areas:
+    "head"
+    "zip"
+    "feeling"
+    "Generate"
+    "entry";
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  grid-template-columns: 90%;
+  z-index: 999;
+}
+
+.holder {
+  margin: 5px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headline {
+  color: orangered;
+  grid-area: head;
+}
+.entry {
+  background: rgba(59, 74, 107, 0.4);
+  width: 90%;
+  grid-area: entry;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding-top: 0;
+  box-shadow: 2px 5px 6px 6px rgba(0, 0, 0, 0.3),
+    9px 11px 11px 0 rgba(0, 0, 0, 0.4);
+}
+
+.zip {
+  width: 90%;
+  grid-area: zip;
+}
+.feel {
+  width: 90%;
+  grid-area: feeling;
+}
+#entryHolder {
+  color: black;
+}
+
+#date {
+  color: firebrick;
+  font-weight: bold;
+}
+
+#temp {
+  color: firebrick;
+  font-weight: bolder;
+}
+
+#content {
+  color: firebrick;
+  font-weight: bolder;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+  display: block;
+  font-size: 27px;
+}
+
+input {
+  display: block;
+  height: 60px;
+  width: 320px;
+  background: #22b2da;
+  color: #f0d43a;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+}
+
+button {
+  height: 50px;
+  background: #3b4a6b;
+  color: #f0d43a;
+  font-size: 26px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  box-shadow: 2px 4px 5px #444;
+  border-radius: 50px;
+  width: 100%;
+  grid-area: Generate;
+}
+h1 {
+  font-size: 40px;
+}
+
+textarea {
+  background: #22b2da;
+  color: #f0d43a;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #3b4b71;
+  padding: 10px;
+  margin: 0;
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #f0d43a;
+  font-family: "Oswald", sans-serif;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #f0d43a;
+  font-family: "Oswald", sans-serif;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #f0d43a;
+  font-family: "Oswald", sans-serif;
+}
